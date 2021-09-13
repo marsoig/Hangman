@@ -2,6 +2,7 @@ body {
   text-align: center;
   background-image: url(img/snowflakes.png);
   background-repeat: repeat;
+  font-family: Arial;
 }
 .title {
   background-color: rgba(255,255,255, 0.8);
@@ -9,26 +10,56 @@ body {
   display: inline-block;
   padding-left:1em;
   padding-right: 1em;
+  margin-top: 10vh;
 }
 .container {
   display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  height: 50vh;
 }
 
 .picture-container {
-  flex-basis: 50%;
+  flex-basis: 65%;
+}
+.picture {
+  height: 100%;
 }
 
 .interface {
-  flex-basis: 50%;
+  flex-basis: 35%;
+  text-align: center;
 }
-
-td {
+.start-button {
+  font-size: 2em;
+  background-color: #1e2796;
+  color: white;
+  border: 2px solid #19207d;
+  border-radius: 10px;
+  padding: 0.25em;
+}
+.start-button:hover {
+    background-color: #2e37ae;
+}
+.row-letters {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.cell {
+  text-align: center;
+  box-sizing: border-box;
   background-color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   font-Family: Arial;
-  width:1em;
+  border: 2px solid #19207d;
+  border-radius: 2px;
+  width: 5vh;
+  height: 5vh;
 }
-table {
-  border-collapse: collapse;
-  border: 4px solid rgb(29,74,120);
+.row-alphabet {
+  margin-top: 8vh;
+}
+.row-alphabet > button {
+  font-size: 1.8em;
 }
